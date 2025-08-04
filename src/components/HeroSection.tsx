@@ -1,6 +1,9 @@
 'use client';
 import * as motion from "motion/react-client";
 import React from "react";
+import { FaGithub, FaLinkedin,} from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
 import { BiArrowToRight } from "react-icons/bi";
 import { BsArrowRight } from "react-icons/bs";
 import { FiArrowRight } from "react-icons/fi";
@@ -8,10 +11,15 @@ import { PiArrowRightLight } from "react-icons/pi";
 import Image from "next/image";
 import HeadshotJulienB from "../assets/images/HeadshotJulienB.png";
 
+    const handleEmailClick = () => {
+      // Option 1: Open default mail client
+      window.location.href = 'mailto:julienbrown2019@gmail.com?subject=Portfolio&body=Hello,'
+    }
 
 export default function HeroSection() {
     return (
-    <section className="min-h-[100vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section> 
+    <div className="min-h-[100vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
              {/* Left side content */}
@@ -35,9 +43,47 @@ export default function HeroSection() {
                     className="group px-10 py-3 bg-[#58a6d0] text-white rounded-lg shadow-md hover:bg-[#4a90b0] transition-colors duration-300 flex items-center justify-center text-lg font-semibold"
                     onClick={() => window.location.href = "/contact"}
                 >
-                    Learn More About Julien
-                    <FiArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"/>
+                Learn More About Julien
+                <FiArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"/>
                 </motion.button>
+                
+                <div className="flex items-center justify-center lg:justify-start mt-6 gap-4">
+                    <a
+                    href="https://www.linkedin.com/in/julien-b-760731121"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-[#58a6d0] transition-colors"
+                    >
+                        <FaLinkedin
+                        className="text-gray-400 hover:text-[#58a6d0]"
+                        size={30}
+                        color=""
+                        />
+                    </a>
+                    <a
+                    href="https://github.com/jjrox2167"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-[#59a6d0] transition-colors"
+                    >
+                        <FaGithub
+                            className="text-gray-400 hover:text-[#58a6d0]"
+                            size={30}
+                            color=""
+                        />
+                    </a>
+                    <a
+                    href="mailto:julienbrown2019@gmail.com?subject=Inquiry%20Regarding%20Your%20Portfolio"
+                    aria-label="Send email"
+                    className="text-gray-400 hover:text-[#58a6d0] transition-colors"
+                    >
+                        <MdEmail
+                            className="text-gray-400 hover:text-[#58a6d0]"
+                            size={30}
+                            color=""
+                         />
+                    </a>
+                </div>
              </motion.div>
 
             {/* Right side content*/}
@@ -61,6 +107,7 @@ export default function HeroSection() {
                     </div>
                 </motion.div>
             </div>
+        </div>
         </div>
     </section>
     );

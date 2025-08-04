@@ -1,13 +1,17 @@
 'use client';
 
 import React from 'react';
+import Layered_Waves from 'public/images/Layered_Waves.svg'
 
 const WorkExperience = () => {
   return (
+    <div className="bg-[url('/images/Layered_Waves.svg')] bg-cover bg-center bg-no-repeat">
     <div className="py-12 px-4 max-w-5xl mx-auto">
       <div className="text-center mb-10">
-        <h1 className="text-3xl font-roboto-mono font-bold text-[#58a6d0] mb-2 uppercase">Work Experience</h1>
+      <div className=''>
+        <h1 id='#experience'className="text-3xl font-roboto-mono font-bold text-white mb-2 uppercase">Work Experience</h1>
         <p className="text-gray-600">A look at my career journey so far.</p>
+      </div>
       </div>
 
       <ul className="relative border-l border-gray-300 pl-6">
@@ -72,6 +76,8 @@ const WorkExperience = () => {
         ))}
       </ul>
     </div>
+    </div>
+    
   );
 };
 

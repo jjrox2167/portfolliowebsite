@@ -43,7 +43,7 @@ const skillsVariants = {
 
 export default function AboutSection() {
   return (
-    <section className="py-20 px-4 relative bg-[#99D6F7]">
+    <section id='#about' className="py-20 px-4 relative bg-[#99D6F7]">
       {/* Heading */}
       <motion.h2
         className="text-4xl font-roboto-mono font-bold text-white text-center mb-10 uppercase"
