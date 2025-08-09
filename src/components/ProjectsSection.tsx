@@ -4,9 +4,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { MdOpacity } from 'react-icons/md';
-import { SiTailwindcss, SiVite } from 'react-icons/si';
+import { SiHtml5, SiNextdotjs, SiPrisma, SiTailwindcss, SiTerraform, SiVite } from 'react-icons/si';
 import FieldFlowHomescreen from 'public/images/FieldFlowHomescreen.jpg'
 import { FaNode, FaReact, FaRegArrowAltCircleRight } from "react-icons/fa";
+import { VscAzure } from 'react-icons/vsc';
 
 
 
@@ -15,22 +16,38 @@ const projects = [
     title: "FieldFlow: Field Schedule & Manage Jobs",
     description: "A modern project management web app helps contracting companies manage projects & teams, assign tasks, and track progress in real time.",
     tech: [
-      { name: "React", icon: FaReact, color: "#61DAFB" },
+      { name: "Next.JS", icon: SiNextdotjs, color: "#61DAFB" },
       { name: "Tailwind", icon: SiTailwindcss, color: "#06B6D4" },
-      { name: "Vite", icon: SiVite, color: "#61DAFB" },
+      { name: "Prisma", icon: SiPrisma, color: "#61DAFB" },
     ],
     image: '/FieldFlowHomescreen.jpg'
   },
   {
-    title: "Product Landing Page",
+    title: "Simple Product Landing Page",
     description: "A modern sleek landing page for websites selling subscription-based products or services. Created with React, Tailwind, and Vite.JS",
     tech: [
       { name: "React", icon: FaReact, color: "#61DAFB" },
       { name: "Tailwind", icon: SiTailwindcss, color: "#06B6D4" },
       { name: "Vite", icon: SiVite, color: "#61DAFB" },
     ],
-    image: '' // will be conditionally handled
+    
+    image: '/SimpleLandingPage.jpg'
+  
   },
+  {
+    title: "Azure Terraform Deployment: Static Web-Page",
+    description: "Terraform cloud deployment of a basic HTML/CSS static web-page via Azure Blob Storage service.",
+    tech: [
+      { name: "Terraform", icon: SiTerraform, color: "#8040C9"},
+      { name: "Azure", icon: VscAzure, color: "#0080FF"},
+      { name: "HTML", icon: SiHtml5, color: "#E34F26"},
+    ],
+
+    image: ''
+
+  },
+
+
 ];
 
 export default function ProjectsSection() {

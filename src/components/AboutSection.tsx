@@ -195,7 +195,7 @@ export default function AboutSection() {
             <SiTerraform className='text-5xl text-purple-600 bg-white rounded-lg py-1 w-12 h-12 mr-4'/>
             <SiGrafana className='text-5xl text-orange-500 bg-white rounded-lg py-1 w-12 h-12 mr-4'/>
             <SiPrometheus className='text-5xl text-orange-500 bg-white rounded-lg py-1 w-12 h-12 mr-4'/>
-            <VscAzure className='text-5xl text-blue-400 bg-white rounded-lg py-1 w-12 h-12 mr-4'/>
+            <VscAzure className='text-5xl text-[#007FFF] bg-white rounded-lg py-1 w-12 h-12 mr-4'/>
 
 
           </div>
