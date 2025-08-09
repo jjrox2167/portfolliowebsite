@@ -1,6 +1,7 @@
 import AboutSection from "@/components/AboutSection";
 import HeroSection from "@/components/HeroSection";
 import WorkExperience from "@/components/WorkExperience";
+import ProjectsSection from "@/components/ProjectsSection";
 
 import React from "react";
 
@@ -13,7 +14,7 @@ export default function Home() {
         {/* */}
         <AboutSection />
         <WorkExperience />
-
+        <ProjectsSection />
       </main>
     </div>
 

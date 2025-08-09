@@ -22,7 +22,7 @@ const robotoMono = Roboto_Mono({
 
 export const metadata: Metadata = {
   title: "Julien Brown's Portfolio",
-  description: "Julien Brown's personal portfolio website showcasing IT Work Experience, Projects and Skills.",
+  description: "Julien Brown's personal portfolio website showcasing IT work experience, Projects and Skills.",
 };
 
 export default function RootLayout({

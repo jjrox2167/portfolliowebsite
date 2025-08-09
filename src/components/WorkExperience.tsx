@@ -5,6 +5,8 @@ import Layered_Waves from 'public/images/Layered_Waves.svg'
 
 const WorkExperience = () => {
   return (
+
+    <section id='experience' className="scroll-mt-0">
     <div className="bg-[url('/images/Layered_Waves.svg')] bg-cover bg-center bg-no-repeat">
     <div className="py-12 px-4 max-w-5xl mx-auto">
       <div className="text-center mb-10">
@@ -77,7 +79,7 @@ const WorkExperience = () => {
       </ul>
     </div>
     </div>
-    
+    </section>
   );
 };
 

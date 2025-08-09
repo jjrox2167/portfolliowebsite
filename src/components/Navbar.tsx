@@ -7,10 +7,10 @@ import { usePathname } from 'next/navigation';
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
-  { href: '/experience', label: 'Work Experience' },
-  { href: '/projects', label: 'Projects' },
-  { href: '/contact', label: 'Contact Me' },
+  { href: '#about', label: 'About' },
+  { href: '#experience', label: 'Work Experience' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#contact', label: 'Contact Me' },
 ];
 
 export default function Navbar() {
@@ -36,7 +36,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex items-center justify-center">
-        {/* Desktop Navigation */}
+        {/* Desktop Nav*/}
         <div className="hidden sm:flex space-x-12 text-[#58a6d0]">
           {navLinks.map((link) => (
             <Link

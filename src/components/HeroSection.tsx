@@ -18,7 +18,7 @@ import HeadshotJulienB from "../assets/images/HeadshotJulienB.png";
 
 export default function HeroSection() {
     return (
-    <section> 
+    <section id="Home" className="scroll-mt-24"> 
     <div className="min-h-[100vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">

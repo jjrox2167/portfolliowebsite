@@ -8,7 +8,18 @@ import {
   SiTailwindcss,
   SiNextdotjs,
   SiTypescript,
+  SiCss3,
+  SiJavascript,
+  SiGnubash,
+  SiNodedotjs,
+  SiVite,
+  SiGit,
+  SiTerraform,
+  SiGrafana,
+  SiPrometheus,
 } from 'react-icons/si';
+
+import { VscAzure, VscTerminalPowershell } from "react-icons/vsc";
 import React from 'react';
 
 const containerVariants = {
@@ -43,7 +54,7 @@ const skillsVariants = {
 
 export default function AboutSection() {
   return (
-    <section id='#about' className="py-20 px-4 relative bg-[#99D6F7]">
+    <section id='about' className="scroll-mt-0 py-20 px-4 relative bg-[#99D6F7]">
       {/* Heading */}
       <motion.h2
         className="text-4xl font-roboto-mono font-bold text-white text-center mb-10 uppercase"
@@ -73,7 +84,7 @@ export default function AboutSection() {
             With 7+ years of experience, I’ve delivered high-quality, scalable IT solutions across cloud and virtualization platforms.
           </p>
           <p className='text-lg'>
-            As the organization’s technology SME, I consult with executives and engineers to design networks, systems, and cloud architectures that drive operational excellence.
+            In my current role, I am responsible for being the organization&apos;s subject matter for technology as well as consulting with the executive team, designing networks, engineering IT systems, and implementing versatile cloud solutions. I am also responsible for maintaining the organization&apos;s IT infrastructure and ensuring that all systems are up-to-date and running efficiently.
           </p>
           <a
             href="/JulienBrown_Resume.pdf"
@@ -151,16 +162,44 @@ export default function AboutSection() {
         whileInView={"show"}
         viewport={{ once: true }}
         >
-        <motion.div className='gradient-border rounded-md bg-[#58a6d0] py-30' variants={skillsVariants}>
-           {/*<div className="flex justify-center mb-2">
+        <motion.div className='gradient-border rounded-md bg-[#58a6d0] py-25' variants={skillsVariants}>
+           <div className="flex justify-center mb-2">
             
-            <SiHtml5 className="text-5xl text-orange-500 bg-white rounded-lg py-1 w-15" />
+            <SiHtml5 className="text-5xl text-orange-500 bg-white rounded-lg py-1 w-12 h-12 mr-4" />
+            <SiCss3 className='text-5xl text-blue-400 bg-white rounded-lg py-1 w-12 h-12 mr-4' />
+            <SiJavascript className='text-5xl text-yellow-400 bg-white rounded-lg py-1 w-12 h-12 mr-4' />
+            <SiGnubash className='text-5xl text-gray-400 bg-white rounded-lg py-1 w-12 h-12 mr-4'/>
+            <VscTerminalPowershell className='text-5xl text-blue-400 bg-white rounded-lg py-1 w-12 h-12 mr-4' />
+          </div>
+        </motion.div>
+        
+        <motion.div className='gradient-border rounded-md bg-[#58a6d0] py-25' variants={skillsVariants}>
+          <div className='flex justify-center mb-2'>
+          
+            <SiTailwindcss className='text-5xl text-blue-400 bg-white rounded-lg py-1 w-12 h-12 mr-4'/>
+            <SiTypescript className='text-5xl text-blue-500 bg-white rounded-lg py-1 w-12 h-12 mr-4' />
+            <SiReact className='text-5xl text-blue-300 bg-white rounded-lg py-1 w-12 h-12 mr-4'/>
+            <SiNextdotjs className='text-5xl text-black bg-white rounded-lg py-1 w-12 h-12 mr-4'/>
+            <SiNodedotjs className='text-5xl text-green-600 bg-white rounded-lg py-1 w-12 h-12 mr-4'/>
+            <SiVite className='text-5xl text-purple-400 bg-white rounded-lg py-1 w-12 h-12 mr-4'/>
           
           </div>
-          */}
         </motion.div>
-        <motion.div className='gradient-border rounded-md bg-[#58a6d0] py-30' variants={skillsVariants}></motion.div>
-        <motion.div className='gradient-border rounded-md bg-[#58a6d0] py-30' variants={skillsVariants}></motion.div>
+        
+        <motion.div className='gradient-border rounded-md bg-[#58a6d0] py-25' variants={skillsVariants}>
+          <div className='flex justify-center mb-2'>
+
+            <SiGithub className='text-5xl text-black bg-white rounded-lg py-1 w-12 h-12 mr-4'/>
+            <SiGit className='text-5xl text-orange-500 bg-white rounded-lg py-1 w-12 h-12 mr-4'/>
+            <SiDocker className='text-5xl text-blue-500 bg-white rounded-lg py-1 w-12 h-12 mr-4' />
+            <SiTerraform className='text-5xl text-purple-600 bg-white rounded-lg py-1 w-12 h-12 mr-4'/>
+            <SiGrafana className='text-5xl text-orange-500 bg-white rounded-lg py-1 w-12 h-12 mr-4'/>
+            <SiPrometheus className='text-5xl text-orange-500 bg-white rounded-lg py-1 w-12 h-12 mr-4'/>
+            <VscAzure className='text-5xl text-blue-400 bg-white rounded-lg py-1 w-12 h-12 mr-4'/>
+
+
+          </div>
+        </motion.div>
       </motion.div>
         
 
