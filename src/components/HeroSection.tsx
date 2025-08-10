@@ -3,13 +3,10 @@ import * as motion from "motion/react-client";
 import React from "react";
 import { FaGithub, FaLinkedin,} from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-
-import { BiArrowToRight } from "react-icons/bi";
-import { BsArrowRight } from "react-icons/bs";
 import { FiArrowRight } from "react-icons/fi";
-import { PiArrowRightLight } from "react-icons/pi";
 import Image from "next/image";
 import HeadshotJulienB from "../assets/images/HeadshotJulienB.png";
+import { ParticleCanvas } from "@/hooks/particle";
 
     const handleEmailClick = () => {
       // Option 1: Open default mail client
@@ -18,7 +15,9 @@ import HeadshotJulienB from "../assets/images/HeadshotJulienB.png";
 
 export default function HeroSection() {
     return (
+    
     <section id="Home" className="scroll-mt-24"> 
+    
     <div className="min-h-[100vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
